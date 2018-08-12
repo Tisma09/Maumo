@@ -12,44 +12,57 @@
       He has many features, including:
     </h3>
     <p style="z-index:2">
-      Moderator commands:
-        <br>ban,
-            kick,
-            mute,
-            purge...
+      ~Moderator commands:
+        <br>
+        'ban (member to ban): Ban a member<br>
+        'kick (member to kick): Kick a member<br>
+        'mute (member to mute) : mute the member in the channel<br>
+        'unmute member to unmute: unmute a member<br>
+        'purge number of message to delete: deleted messages<br>
     </p>
     <p>
       ~Utile:
-        <br>serverinfo,
-            userinfo,
-            wiki...
+        <br>'serverinfo: Show a information about this server<br>
+        'userinfo (user): Show information about a user<br>
+        'wiki (research): Give a wiki link to your search<br>
     </p>
       <p>
       ~Fun:
-        <br>avatar,
-            say,
-            yesorno,
-            choose,
-            meme,
-            roulette,
-            pokefusion...
+        <br>'avatar (user): Stow avatar of user<br>
+'say (message): Reapet your message<br>
+'yesorno (Question): Answer Yes or No<br>
+'choose (choice1) / (choice2): Chose one of the two choices<br>
+'pokefusion : Show a random pokefusion<br>
+'roulette (a thing) : Say a winner of this ting<br>
+'meme : Show a random meme<br>
+'love (user1) (user2): Calculating love between user1 and user2<br>
     </p>
     <p>
       ~Pokemon commands:
-        <br>dex,
-            randpoke,
-            move,
-            ability,
-            item,
-            nature,
-            shiny,
-            type...
+        <br>'dex (Pokemon name): Shows information on a Pokémon.<br>
+'megadex (Pokemon name) : Shows information on a Mega Pokémon.<br>
+'randpoke : Shows information on a random Pokémon.<br>
+'move (move name) : Shows information on a move<br>
+'ability (ability name) : Shows information on an ability<br>
+'item (item name) : Shows information on an item<br>
+'nat (nature name) : Shows information on a nature<br>
+'shiny (pokemon name) : Shows a Pokemon in shiny<br>
+'type : Shows a Type chart<br>
     </p>
       <p>
       ~NSFW commands:
-        <br>nude,
-            ass,
-            hentai...
+        <br>'nude : Send a random nude<br>
+'ass : Send a random ass<br>
+'hentai : Send a random picture of hentai
+    </p>
+    <p>
+        ~Other commands :
+        'ping : answer pong<br>
+'help : Shows a Bot Command !<br>
+'info : A info on Maumokosinviteme : Give a link for invited me<br>
+'support : Give a link for join suppport server<br>
+    <p>
+        <br>What is in parentheses is to replace by what corresponds without parentheses
     </p>
    <img src="https://cdn.discordapp.com/attachments/422015598071906342/428535286432006145/d.PNG" width="350" >
    <nav>
