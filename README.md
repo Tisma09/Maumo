@@ -2,7 +2,7 @@
 <html>
 <body>
     <h1>
-        The Better Pokemon and Fun discord bot !
+        The Better Pokemon and Fun discord bot !^^
     </h1>
   <p>Hello, this is the code of my wonderful bot Maumokos, Maumokos is a bot with fun commands, moderation, multifunction with even detailed information on pokemn and nsfw commands, I hope you like it, here is a summary of its functionality.</p>
     <a href="https://discordbots.org/bot/405052647213760517" >
