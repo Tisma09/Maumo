@@ -49,12 +49,6 @@
 'shiny (pokemon name) : Shows a Pokemon in shiny<br>
 'type : Shows a Type chart<br>
     </p>
-      <p>
-      ~NSFW commands:
-        <br>'nude : Send a random nude<br>
-'ass : Send a random ass<br>
-'hentai : Send a random picture of hentai
-    </p>
     <p>
         ~Other commands :
         'ping : answer pong<br>
