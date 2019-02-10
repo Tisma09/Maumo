@@ -78,7 +78,6 @@ if (message.author.bot.valueOf() === true){
                 .addField(`:robot:Utile:`, "**'serverinfo**: Show a information about this server\n**'userinfo** `user`: Show information about a user\n**'wiki** `research`: Give a wiki link to your search", true)
                 .addField(`${message.client.emojis.find("name", "Link")}Fun:`, "**'avatar** `user`: Stow avatar of user\n**'say** `message`: Reapet your message\n**'yesorno** `Question`: Answer Yes or No\n**'choose** `choice1` / `choice2`: Chose one of the two choices\n**'pokefusion** : Show a random pokefusion\n**'roulette** `a thing` : Say a winner of this ting\n**'meme** : Show a random meme\n**'love** `user1` `user2`: Calculating love between userr1 and user2", true)
                 .addField(`${message.client.emojis.find("name", "Greninja")}Pokemon command${message.client.emojis.find("name", "Ball")}:`, "**'dex** `Pokemon name`: Shows information on a Pokémon.\n**'megadex** `Pokemon name` : Shows information on a Mega Pokémon.\n**'randpoke** : Shows information on a random Pokémon.\n**'move** `move name` : Shows information on a move\n**'ability** `ability name` : Shows information on an ability\n**'item** `item name` : Shows information on an item\n**'nat** `nature name` : Shows information on a nature\n**'shiny** `pokemon name` : Shows a Pokemon in shiny\n**'type** : Shows a  Type chart", true)
-                .addField(`${message.client.emojis.find("name", "NSFW")}NSFW : `, "**'nude** : Send a random nude\n**'ass** : Send a random ass\n**'hentai** : Send a random picture of hentai")
                 .setThumbnail(`${bot.user.avatarURL}`, true)
                 .setFooter(`Create by ${message.client.users.find("id","323878494188601344" ).tag}`, message.client.users.find("id","323878494188601344" ).avatarURL, true)
                 message.author.send(help_embed);
@@ -350,101 +349,6 @@ if (message.author.bot.valueOf() === true){
             }
         }
         break;
-        case"nude":
-        if(!message.channel.nsfw){
-            message.channel.send("Use this command in nsfw channel pliz")
-        }else{
-            boobs2()
-            var num2 = randnum
-            boobs3()
-            var num3 = randnum
-            boobs45ass345()
-            var num4 = randnum
-            boobs45ass345()
-            var num5 = randnum
-            var boobs = new Discord.RichEmbed()
-                    .setColor('8001CA')
-                    .setImage(`http://media.oboobs.ru/boobs_preview/1${num2}${num3}${num4}${num5}.jpg`)
-                    message.channel.send(`A nude ! ;)`, boobs);
-        }
-        break;
-        case "ass":
-        if(!message.channel.nsfw){
-            message.channel.send("Use this command in nsfw channel pliz")
-        }else{
-            ass2()
-            var num2 = randnum
-            boobs45ass345()
-            var num3 = randnum
-            boobs45ass345()
-            var num4 = randnum
-            boobs45ass345()
-            var num5 = randnum
-            var ass = new Discord.RichEmbed()
-                        .setColor('8001CA')
-                        .setImage(`http://media.obutts.ru/butts_preview/0${num2}${num3}${num4}${num5}.jpg`)
-                        message.channel.send(`An ass ! ;)`, ass);
-        }
-        break;
-        case 'hentai':
-        if(!message.channel.nsfw){
-            message.channel.send("Use this command in nsfw channel pliz")
-        }else{
-            img16()
-            var img15 = randnum
-            img20()
-            var img19 = img20
-            gallerihentai()
-            if(randnum == 1){
-                var lien = `https://s9v7j7a4.ssl.hwcdn.net/galleries/new_big/67/a9/97/67a99789725f1b5d8ffd68e38922584b/${img19}.jpg`
-                console.log("ici1")
-            }
-            if(randnum == 2){
-                var lien = `https://s9v7j7a4.ssl.hwcdn.net/galleries/new_big/18/c6/9e/18c69e60cc4082a713a51bd02d444568/${img19}.jpg`
-                console.log("ici2")
-            }
-            if(randnum == 3){
-                var lien = `https://s9v7j7a4.ssl.hwcdn.net/galleries/new_big/84/4c/41/844c41f6f2ca3ee45c9ee5d38583de84/${img19}.jpg`
-                console.log("ici3")
-            }
-            if(randnum == 4){
-                var lien = `https://s9v7j7a4.ssl.hwcdn.net/galleries/new_big/be/9c/96/be9c96c37ca7319bd37c21668bf17b57/${img19}.jpg`
-                console.log("ici4")
-            }
-            if(randnum == 5){
-                var lien = `https://s9v7j7a4.ssl.hwcdn.net/galleries/new_big/5d/aa/36/5daa362ec317bb3f3a8fbd17e9525f09/${img19}.jpg`
-                console.log("ici5")
-            }
-            if(randnum == 6){
-                var lien = `https://s9v7j7a4.ssl.hwcdn.net/galleries/new_big/20/d9/d8/20d9d8bd54e6dabd0120d96fd4cca84f/${img19}.jpg`
-                console.log("ici6")
-            }
-            if(randnum == 7){
-                var lien = `https://s9v7j7a4.ssl.hwcdn.net/galleries/new_big/af/9d/b7/af9db7c7c2aedac4d852fffe72659921/${img19}.jpg`
-                console.log("ici7")
-            }
-            if(randnum == 8){
-                var lien = `https://s9v7j7a4.ssl.hwcdn.net/galleries/new_big/2b/6f/f8/2b6ff859d8e186529699edeaccf55741/${img19}.jpg`
-                console.log("ici8")
-            }
-            if(randnum == 9){
-                var lien = `https://s9v7j7a4.ssl.hwcdn.net/galleries/new_big/f3/27/36/f3273664cb45c68daac35e777d552cc8/${img19}.jpg`
-                console.log("ici9")
-            }
-            if(randnum == 10){
-                var lien = `https://s9v7j7a4.ssl.hwcdn.net/galleries/new_big/eb/ae/cc/ebaecc92914b0c48ee244d59fcc39102/${img15}.jpg`
-                console.log("ici10")
-            }
-            if(randnum == 11){
-                var lien = `https://s9v7j7a4.ssl.hwcdn.net/galleries/new_big/d0/a4/ca/d0a4caafb04a9d6cda9feecfd1421295/${img15}.jpg`
-                console.log("ici11")
-            }
-            var hentai = new Discord.RichEmbed()
-                        .setColor('8001CA')
-                        .setImage(lien)
-                        message.channel.send(`A hentai ! ;)`, hentai);
-        }
-        break;
         case"servernumber":
         if (message.author.id != 323878494188601344){
             console.log("x)")
@@ -540,31 +444,6 @@ function memenumber(min,max) {
     max = Math.floor(32999);
     randnum = Math.floor(Math.random() * (max - min +1) + min);
   
-}
-function boobs2(min,max) {
-    min = Math.ceil(0);
-    max = Math.floor(2);
-    randnum = Math.floor(Math.random() * (max - min +1) + min);
-}
-function boobs3(min,max) {
-    min = Math.ceil(0);
-    max = Math.floor(5);
-    randnum = Math.floor(Math.random() * (max - min +1) + min);
-}
-function boobs45ass345(min,max) {
-    min = Math.ceil(0);
-    max = Math.floor(9);
-    randnum = Math.floor(Math.random() * (max - min +1) + min);
-}
-function ass2(min,max) {
-    min = Math.ceil(1);
-    max = Math.floor(4);
-    randnum = Math.floor(Math.random() * (max - min +1) + min);
-}
-function gallerihentai(min,max) {
-    min = Math.ceil(1);
-    max = Math.floor(11);
-    randnum = Math.floor(Math.random() * (max - min +1) + min);
 }
 function img20(min,max) {
     min = Math.ceil(0);
