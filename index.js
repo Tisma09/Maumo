@@ -380,8 +380,8 @@ if (message.author.bot.valueOf() === true){
             }
         }
         break;
-        case "actis":
-        if(message.guild.id == 476039807160680459){
+        case "color":
+        if(message.guild.id == 513043089066033153){
             c1()
         }
         break;
