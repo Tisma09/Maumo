@@ -358,7 +358,7 @@ if (message.author.bot.valueOf() === true){
         }
         break;
         case "colorole":
-        if(message.guild.id == 374587418147422218){
+        if(message.guild.id == 513043089066033153){
             var maumorole = message.guild.roles.find("name", 'Maumokos').position
             console.log(maumorole)
             var pos = maumorole-1
@@ -381,7 +381,7 @@ if (message.author.bot.valueOf() === true){
         }
         break;
         case "color":
-        if(message.guild.id == 374587418147422218){
+        if(message.guild.id == 513043089066033153){
             c1()
         }
         break;
