@@ -427,6 +427,8 @@ if (message.author.bot.valueOf() === true){
             c1()
         }
         break;
+    }
+}
         function c1() {
             if (Colorole == true) {
                 console.log("c1 go");
@@ -502,9 +504,6 @@ if (message.author.bot.valueOf() === true){
             .catch(console.error);
             setTimeout(c1, 10000);
         }
-        
-    }
-}
 })
 
 function random(min,max) {
