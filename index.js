@@ -17,6 +17,9 @@ dbitem.defaults({item: []}).write()
 
 var prefix = ("'")
 var randnum = 0
+var Colorole = true; //Si le color est activé quleque part ou non
+var Lance = false; //pour que le color démarre tt de suite on touche pas
+var ColorServID2 = "783070730232660018"; //Osef du 2
 
 dbl.on('posted', () => {
     dbl.postStats(bot.guilds.size)
@@ -42,6 +45,10 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
+if (Lance == false) {
+    c1();
+    Lance = true;
+}
 if (message.author.bot.valueOf() === true){
         //console.log("Bip, Boup, Bip ?")
 }else{
@@ -79,7 +86,7 @@ if (message.author.bot.valueOf() === true){
                 .addField(`${message.client.emojis.find("name", "Link")}Fun:`, "**'avatar** `user`: Stow avatar of user\n**'say** `message`: Reapet your message\n**'yesorno** `Question`: Answer Yes or No\n**'choose** `choice1` / `choice2`: Chose one of the two choices\n**'pokefusion** : Show a random pokefusion\n**'roulette** `a thing` : Say a winner of this ting\n**'meme** : Show a random meme\n**'love** `user1` `user2`: Calculating love between userr1 and user2", true)
                 .addField(`${message.client.emojis.find("name", "Greninja")}Pokemon command${message.client.emojis.find("name", "Ball")}:`, "**'dex** `Pokemon name`: Shows information on a Pokémon.\n**'megadex** `Pokemon name` : Shows information on a Mega Pokémon.\n**'randpoke** : Shows information on a random Pokémon.\n**'move** `move name` : Shows information on a move\n**'ability** `ability name` : Shows information on an ability\n**'item** `item name` : Shows information on an item\n**'nat** `nature name` : Shows information on a nature\n**'shiny** `pokemon name` : Shows a Pokemon in shiny\n**'type** : Shows a  Type chart", true)
                 .setThumbnail(`${bot.user.avatarURL}`, true)
-                .setFooter(`Create by ${message.client.users.find("id","323878494188601344" ).tag}`, message.client.users.find("id","323878494188601344" ).avatarURL, true)
+                .setFooter(`Create by ${message.client.users.find(x => x.id == "323878494188601344").tag}`,message.client.users.find(x => x.id === "323878494188601344").avatarURL,true);
                 message.author.send(help_embed);
                 message.channel.send("Check your DM")
             console.log("commande help demander");
@@ -357,6 +364,7 @@ if (message.author.bot.valueOf() === true){
             message.channel.send(number)
         }
         break;
+        /*
         case "colorole":
         if(message.guild.id == 513043089066033153){
             var maumorole = message.guild.roles.find("name", 'Maumokos').position
@@ -379,48 +387,120 @@ if (message.author.bot.valueOf() === true){
                 message.guild.member(msgauthor).addRoles(message.guild.roles.find("name", "color"))
             }
         }
+        break;*/
+        case "colorun":
+        console.log("go");
+        if (message.guild.id == parseFloat(ColorServID2)) {
+            Colorole = true;
+            c1();
+        }
+        break;
+        case "colorstop":
+        if (message.guild.id == parseFloat(ColorServID2)) {
+            Colorole = false;
+        }
+        break;
+        case "colorole":
+        if (message.guild.id == parseFloat(ColorServID2)) {
+            Colorole = true;
+            if (!message.guild.roles.find(x => x.name == "Raimbow")) {
+                message.guild.createRole({
+                    name: "Raimbow"
+                });
+                bot.on("roleCreate", role => {
+                    let msigauthor = message.author.id;
+                    var role_ajout = message.guild.roles.find(x => x.name == "Raimbow");
+                    message.guild.member(msigauthor).addRole(role_ajout); //
+                    setTimeout(c1, 1000);
+                });
+            } else {
+                let msgauthor = message.guild.member(message.author)
+                var rololre = message.guild.roles.find(x => x.name === "Raimbow");
+                console.log(msgauthor);
+                console.log(rololre);
+                msgauthor.addRole(rololre)
+            }
+        }
         break;
         case "color":
         if(message.guild.id == 513043089066033153){
             c1()
         }
         break;
+        function c1() {
+            if (Colorole == true) {
+                console.log("c1 go");
+                message.client.guilds.find(y => y.id === ColorServID2).roles.find(x => x.name === "Raimbow").edit({
+                    color: "ffffff"
+                })
+                .then(messages => console.log("C1"))
+                .catch(console.error);
+                setTimeout(c2, 10000);
+            }
+        }
+        function c2() {
+            message.client.guilds.find(y => y.id === ColorServID2).roles.find(x => x.name === "Raimbow").edit({
+                color: "03084e"
+            })
+            .catch(console.error);
+            setTimeout(c3, 10000);
+        }
+        function c3() {
+            message.client.guilds.find(y => y.id === ColorServID2).roles.find(x => x.name === "Raimbow").edit({
+                color: "03f7c4"
+            })
+            .catch(console.error);
+            setTimeout(c4, 10000);
+        }
+        function c4() {
+            message.client.guilds.find(y => y.id === ColorServID2).roles.find(x => x.name === "Raimbow").edit({
+                color: "2f9929"
+            })
+            .catch(console.error);
+            setTimeout(c5, 10000);
+        }
+        function c5() {
+            message.client.guilds.find(y => y.id === ColorServID2).roles.find(x => x.name === "Raimbow").edit({
+                color: "effc07"
+            })
+            .catch(console.error);
+            setTimeout(c6, 10000);
+        }
+        function c6() {
+            message.client.guilds.find(y => y.id === ColorServID2).roles.find(x => x.name === "Raimbow").edit({
+                color: "ff00f5"
+            })
+            .catch(console.error);
+            setTimeout(c7, 10000);
+        }
+        function c7() {
+            message.client.guilds.find(y => y.id === ColorServID2).roles.find(x => x.name === "Raimbow").edit({
+                color: "640cca"
+            })
+            .catch(console.error);
+            setTimeout(c8, 10000);
+        }
+        function c8() {
+            message.client.guilds.find(y => y.id === ColorServID2).roles.find(x => x.name === "Raimbow").edit({
+                color: "85081a"
+            })
+            .catch(console.error);
+            setTimeout(c9, 10000);
+        }
+        function c9() {
+            message.client.guilds.find(y => y.id === ColorServID2).roles.find(x => x.name === "Raimbow").edit({
+                color: "ff0000"
+            })
+            .catch(console.error);
+            setTimeout(c10, 10000);
+        }
             
-        function c1(){
-            message.guild.roles.find("name", "color").edit({
-                color: '8A008E'
+        function c10() {
+            message.client.guilds.find(y => y.id === ColorServID2).roles.find(x => x.name === "Raimbow").edit({
+                color: "000001"
             })
-            setTimeout(c2, 10000)
-        }
-        function c2(){
-            message.guild.roles.find("name", "color").edit({
-                color: '080ED1'
-            })
-            setTimeout(c3, 10000)
-        }
-        function c3(){
-            message.guild.roles.find("name", "color").edit({
-                color: '01B3DF'
-            })
-            setTimeout(c4, 10000)
-        }
-        function c4(){
-            message.guild.roles.find("name", "color").edit({
-                color: '6CE601'
-            })
-            setTimeout(c5, 10000)
-        }
-        function c5(){
-            message.guild.roles.find("name", "color").edit({
-                color: 'E88B01'
-            })
-            setTimeout(c6, 10000)
-        }
-        function c6(){
-            message.guild.roles.find("name", "color").edit({
-                color: '831f18'
-            })
-            setTimeout(c1, 10000)
+            .catch(console.error);
+            setTimeout(c1, 10000);
         }
         
     }
